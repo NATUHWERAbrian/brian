@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+nav{
+    padding: 30px;
+    background-color: azure;
+    text-align: right;
+}
+nav a{
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 6px;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+main {
+    padding: 20px;
+}
+
+.hero img,
+.course img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testimonials{
+    display: flex;
+}
+h3{
+    text-align: center;
+    
+}
+
+
+h2 {
+    color: #4CAF50;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius:0px;
+}
+.faq img{
+    width: 70%;
+    height: 700px;
+    margin-left: 50px;
+}
+.hero a{
+    text-decoration: none;
+    background-color: aqua;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+.hero {
+    text-align: center;
+    margin-bottom: 20px;
+    background-image: url(about\ 2.webp);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    font-size: xx-large;
+    color: red;
+    margin: 1px;
+    padding-left:0;
+    margin-top: 1px;
+    padding-top: 60px;
+}
+
+
+
+
+
+
+
+.contact-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: azure;
+    color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.course-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.course {
+    flex: 1 1 calc(25% - 20px); 
+    margin: 10px; 
+    box-sizing: border-box; 
+}
+
+.course img {
+    width:100% ; 
+    height:200px; 
+}
+section h2{
+    text-align: center;
+}
+.contact-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.contact-form {
+    flex: 1; /* Allow form to take available space */
+    margin-right:5px; /* Space between form and image */
+    
+}
+.testimonials img{
+    
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.contact-image img {
+    width: 100%; /* Ensure image is responsive */
+    height:300px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add some rounding to the image */
+}
+@media (max-width: 768px) {
+    .course {
+        flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .course {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+
+.about-learning-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the sections */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding-top: 100px;
+}
+img:hover{
+    transform: scale(1.05);
+}
+
+p{
+    text-align: center;
+}
+
+
+
+
+.about, .learning-pathways {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 10px; /* Margin around sections */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.about img, .learning-pathways img {
+    width: 100%; /* Ensure images are responsive */
+    height:300px; /* Maintain aspect ratio */
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+    .about-learning-container {
+        flex-direction: column; /* Stack sections on smaller screens */
+    }
+}
